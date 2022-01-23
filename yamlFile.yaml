@@ -30,6 +30,7 @@ paths:
       summary: CheckEligibilityRequest
       description: |
         This method is called by a client in order to initiate scoring for a specific customer.
+        
         |  |  |
         | ------- | --------|
         | **Direction** | Client to Simbrella |
@@ -37,6 +38,7 @@ paths:
         | **Function Name** | CheckEligibility |
         | **Endpoint** | http://127.0.01:10031/microlending/checkEligibility |
         | **Request Type** | POST |
+        
       operationId: CheckEligibilityRequest
       requestBody:
         description: |
