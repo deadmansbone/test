@@ -122,7 +122,7 @@ paths:
         in: query
         description: |
           Identifier of a product chosen by user. Product id is mapped to a certain product selected by customer from list of available products
-        required: false
+        required: true
         style: form
         explode: true
         schema:
@@ -137,7 +137,7 @@ paths:
           * app - Mobile Application channel
           * web - WEB application channel
           * other - Other request channel
-        required: false
+        required: true
         style: form
         explode: true
         schema:
@@ -192,6 +192,10 @@ components:
           format: decimal
           example: 50672.75
     inline_response_200_1:
+      required:
+      - msisdn
+      - resultCode
+      - resultDescription
       type: object
       properties:
         msisdn:
