@@ -31,6 +31,7 @@ paths:
       description: |
         This method is called by a client in order to initiate scoring for a specific customer.
         
+        |||
         | **Direction** | Client to Simbrella |
         | **Type** | SYNC |
         | **Function Name** | CheckEligibility |
